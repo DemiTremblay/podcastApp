@@ -7,5 +7,4 @@ Podcast app
 Students
 ========
 
-Demi Tremblay
-Jessica Coulas
+Demi Tremblay (DemiTremblay) and Jessica Coulas (Coul0127)
