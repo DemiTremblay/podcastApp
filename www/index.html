@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+    	<link href="stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+    	<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+        <title>MetaPOD</title>
+    </head>
+    <body>
+        <div class="app">
+            <div class="app">
+            <div id = "menu">
+                <header>
+                    <a id='refresh' class="icon-refresh left2"></a>
+                    <a id='addButton' class="icon-plus right "></a>
+                    <h1>MetaPOD</h1>
+                    <h2>I choose you!</h2>
+                    
+                </header>
+                <div id="states">
+                    <button class="state" id='online'>Go Online</button>
+                    <button class="state" id='offline'>Go Offline</button>
+                </div>
+                
+                <div id="podcastList">
+                </div>
+            </div>
+                
+                
+            <div id = "player" class = "hidden">
+                <header>
+                    <h1 id="podcastTitle">Media Player</h1>
+                    <a class = "back icon-arrow-left left" ></a>
+                </header>
+                
+                <div id="playerImage" class="audio-player-image">
+                    <img id="backImage" src=""/>
+                </div>
+            
+                <div id="playerControls" class="audio-player-controls">
+                
+                 <div class="seekbar">
+                        <input type="range" value="38" />
+                        <div class="seekbar-progress">
+                            <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                    <span class="audio-player-time"><span id = "progressHours"></span><span id = "progressMinutes">00:</span><span id = "progressSeconds">00</span>/<span id = "durationHours"></span><span id = "durationMinutes">00:</span><span id = "durationSeconds">00</span></span>
+                    <span class="audio-player-button-wrappers">
+                        <span class="audio-player-10seconds">10 sec</span><a role="button" class="audio-player-button small  icon-backward" id="reverse"></a>
+                        <a role="button" class="audio-player-button icon-play" id="play"></a>
+                        <a role="button" class="audio-player-button icon-pause" src="img/pauseButton.svg" id="pause"></a>
+                        <a role="button" class="audio-player-button small icon-forward" id="skip"></a>
+                        <span class="audio-player-song-name">30 sec</span>     
+                    </span>                   
+                </div>     
+            </div>
+                
+            <div id = "addPage" class = "hidden">
+                <header>
+                    <h1>Add</h1>
+                    <a class = "back icon-arrow-left left" ></a>
+                </header>
+                
+                <div class="group" id="urlInput" onblur="app.hideLabel">      
+                  <input id="addPodcastText" type="url" value="" required>
+                </div>
+                
+                <input id="addPodcastButton" type="submit" value="Add Podcast">
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/sim.js"></script>
+    </body>
+</html>

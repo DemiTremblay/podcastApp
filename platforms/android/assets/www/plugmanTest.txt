@@ -1,0 +1,1 @@
+plugman install --platform android --project C:\wamp\www\mad9135\podcastApp --plugin https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git [--plugins_dir C:\wamp\www\mad9135\podcastApp\plugins] [--www C:\wamp\www\mad9135\podcastApp\www] [--variable toast=toast [--variable toast=toast ...]]

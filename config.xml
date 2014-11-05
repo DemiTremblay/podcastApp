@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.algonquincollege.podcastApp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>MetaPOD</name>
+    <description>
+        Podcast App for MAD9135
+    </description>
+    <author email="demi.tremblay@rogers.com" href="">
+        Demi Tremblay and Jessica Coulas
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="orientation" value="portrait" />
+</widget>
